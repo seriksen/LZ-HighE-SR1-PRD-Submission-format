@@ -120,13 +120,13 @@ A similar replacement is made for each operator, $\mathcal{O}_i$.
 This report considers mass splitting values in the 0-250~keV range, which are well-motivated in many WIMP models~\cite{Smith_2001, Barello_2014}.
 \par
 Before experimental limits can be translated into bounds on the operator coefficients of \autoref{eq:operators}, it is necessary to calculate nuclear response functions for DM elastic scattering. 
-It is common practice to use the full-basis shell-model calculations of each contributing Xe isotope using the GCN5082 interaction when determining these responses \cite{MENENDEZ2009139}. 
+It is common practice to use the full-basis shell-model calculations of each contributing Xe isotope using the GCN5082 interaction when determining these responses~\cite{MENENDEZ2009139}. 
 Recently, these calculations have been revised, leading to a much-improved determination of the one-body nuclear density matrices \cite{haxton_unpublished}.
 In this analysis, the updated density matrices were incorporated into DMFormfactor-v6 \cite{Anand:MathematicaEFT}, a software package for calculating the NREFT dark matter-nucleus scattering. 
 %This integration enabled the extraction of more accurate nuclear response functions for Xe isotopes. 
-These response functions were subsequently integrated into WimPyDD, a framework for modelling the interaction of dark matter with atomic nuclei in direct detection experiments \cite{Jeong_2022}. 
-This modified version of WimPyDD was validated against both DMFormfactor-v6 and the published interaction Lagrangian recoil spectra by PandaX and Haxton \cite{PandaX2:SD_EFT_2019}.
-\autoref{fig:recoils} shows the differential rate spectra, generated using the modified WimPyDD, for each non-relativistic operator considered in this analysis, assuming a WIMP mass of 1000 GeV/c$^2$ .
+These response functions were subsequently integrated into WimPyDD, a framework for modelling the interaction of dark matter with atomic nuclei in direct detection experiments~\cite{Jeong_2022}. 
+This modified version of WimPyDD was validated against both DMFormfactor-v6 and the published interaction Lagrangian recoil spectra by PandaX and Haxton~\cite{PandaX2:SD_EFT_2019}.
+\autoref{fig:recoils} shows the differential rate spectra, generated using the modified WimPyDD, for each non-relativistic operator considered in this analysis, assuming a WIMP mass of 1000 GeV/c$^2$.
 
 
 \begin{figure*}[hbt!]
@@ -155,33 +155,37 @@ The S1 and S2 signals are reported in units of photons detected (phd), accountin
 Additionally, the S2:S1 ratio differs for electronic recoils (ERs) and nuclear recoils (NRs), providing discrimination power between different interaction types.
 This is illustrated in \autoref{fig:calibrations} using LZ calibration datasets.
 The position-corrected S1 and S2 observables are typically used (S1$c$ and S2$c$, respectively),  to improve the energy resolution and discrimination between ERs and NRs. 
-Position-corrected observables also allow for the use of linear scaling factors, $g_1$ and $g_2$, to correlate the S1$c$ and S2$c$ signals, respectively, to the original number of photons and electrons produced ($n_{ph}$ and $n_e$): \begin{equation}
+Position-corrected observables also allow for the use of linear scaling factors, $g_1$ and $g_2$, to correlate the S1$c$ and S2$c$ signals, respectively, to the original number of photons and electrons produced ($n_{ph}$ and $n_e$): 
+\begin{equation}
     \text{S1}c = g_1\langle n_{ph} \rangle; \hspace{1cm} \text{S2}c = g_2 \langle n_e \rangle. 
 \label{eq:S1S2scale}
 \end{equation}
 \par
 To reject internal and external backgrounds, the LZ experiment includes two veto detectors: a xenon ``Skin" veto surrounding the active mass, which is outfitted with 93 1-inch and 38 2-inch PMTs; and a near-hermetic ``outer detector" (OD) consisting of acrylic tanks containing 17~tonnes of gadolinium-loaded liquid scintillator (0.1\% by mass). 
-The skin is designed to identify multiply scattering interactions entering or exiting the TPC, while the outer detector is designed to capture and identify neutrons which may scatter in the TPC. 
+The skin is designed to identify multiple scattering interactions entering or exiting the TPC, while the outer detector is designed to capture and identify neutrons which may scatter in the TPC. 
 The entire system is housed in a tank that is filled with 238~tonnes of ultra-pure water, which provides shielding from ambient radioactive backgrounds emitted by the cavern rock~\cite{LZ:Experiment_2020, LZ:TDR_2017}.
 120 8-inch PMTs are situated around the walls of this tank to observe any light produced in the OD.
 \par
 A 60 live-day exposure using a 5.5~$\pm$~0.2 tonne fiducial volume (FV) was collected between December 2021 and May 2022. 
 Using events from a dataset with S1$c$ between 3~and~80~phd, uncorrected S2~$>$~600~phd and log$_{10}$(S2$c$)~$<$~5, LZ set world-leading constraints on SI WIMP-nucleon interactions for masses greater than 9~GeV/c$^2$, 
 with the most stringent limit excluding cross-sections greater than 9.2~$\times$~10$^{-48}$~cm$^2$ for 36~GeV/c$^2$ WIMPs~\cite{LZ:SR1WS_2022}. 
-This report extends the region of interest (ROI) of the same dataset to include S1$c$ signals between 3~and~600~phd in order to give sensitivity to NREFT interactions with their most significant rate contribution outside the typical search window used when considering SI and SD interactions. The maximum S2$c$ considered in this analysis is set at log$_{10}$(S2$c$)~=~4.5 to remove ER backgrounds far from the NR signal region, given that leakage from ERs becomes less significant at higher energies (see \autoref{fig:calibrations}).
+This report extends the region of interest (ROI) of the same dataset to include S1$c$ signals between 3~and~600~phd in order to give sensitivity to NREFT interactions with their most significant rate contribution outside the typical search window used when considering SI and SD interactions. 
+The maximum S2$c$ considered in this analysis is set at log$_{10}$(S2$c$)~=~4.5 to remove ER backgrounds far from the NR signal region, given that leakage from ERs becomes less significant at higher energies (see \autoref{fig:calibrations}).
 The lower bound on uncorrected S2 is maintained at 600~phd.
 
 \subsection{\label{subsec:cal_and_data}Calibrations and Data Selections}
 \par
 As described in Ref.~\cite{LZ:SR1WS_2022}, the ER and NR responses were measured using dedicated \textit{in-situ} calibrations with tritiated methane (0--18.6~keV ERs) and D-D fusion neutrons (0--74~keV NRs). 
-The detector and model response parameters from NEST 2.3.7 (Noble Element Simulation Technique)~\cite{NEST:paper_2022, NEST:paper_2023} were tuned to the ER and NR calibration data in order to reproduce the observed data. This tuning was used along with constraints from the energy reconstruction of several monoenergetic peaks from background and calibration sources to find the S1$c$ and S2$c$ scaling factors defined in \autoref{eq:S1S2scale}: $g_1$~=~0.114~$\pm$~0.002~phd/photon and $g_2$~=~47.1~$\pm$~1.1~phd/electron. 
+The detector and model response parameters from NEST 2.3.7 (Noble Element Simulation Technique)~\cite{NEST:paper_2022, NEST:paper_2023} were tuned to the ER and NR calibration data in order to reproduce the observed data. 
+This tuning was used along with constraints from the energy reconstruction of several monoenergetic peaks from background and calibration sources to find the S1$c$ and S2$c$ scaling factors defined in \autoref{eq:S1S2scale}: $g_1$~=~0.114~$\pm$~0.002~phd/photon and $g_2$~=~47.1~$\pm$~1.1~phd/electron. 
 
 Extending the ER and NR response models through the extended energy ROI is one of the key challenges in performing an NREFT analysis. For this, $\beta$ emissions from ${}^{212}$Pb following an injection of ${}^{220}$Rn provide a calibration of the ER response through the 3~--~600~phd NREFT search window. 
 Reproducing the ${}^{212}$Pb response does not require altering $g_1$ or $g_2$ from Ref~\cite{LZ:SR1WS_2022}; however, NEST underestimates the observed ER band widths above 100~phd, worsening at higher energies ($\mathcal{O}$(10\%) disagreement at 600~phd). 
 To account for this, the functionality in NEST for energy-dependent smearing of pulse areas is utilized, similar to the methods reported in Ref.~\cite{LUX:ER_modelling_2020}. 
 This results in proper reproduction of the ER response in and beyond the NREFT ROI, allowing for accurate characterization of ER leakage from $\beta$ backgrounds into the NR signal region.
 \par
-The NR response for LZ is only directly calibrated to approximately 80~keV$_{\rm{nr}}$\footnote{For energy units, ``keV" is used for true recoil energies, while reserving ``keV$_{\rm{ee}}$" and ``keV$_{\rm{nr}}$" for energy values reconstructed from measured quantities and assuming either an ER or NR interaction, respectively.} using D-D with supplementary AmLi neutron calibrations. However, the NR models in NEST are based on a collection of all LXe light and charge yield measurements available in the existing literature, and 
+The NR response for LZ is only directly calibrated to approximately 80~keV$_{\rm{nr}}$\footnote{For energy units, ``keV" is used for true recoil energies, while reserving ``keV$_{\rm{ee}}$" and ``keV$_{\rm{nr}}$" for energy values reconstructed from measured quantities and assuming either an ER or NR interaction, respectively.} using D-D with supplementary AmLi neutron calibrations. 
+However, the NR models in NEST are based on a collection of all LXe light and charge yield measurements available in the existing literature, and 
 the highest energy measurements included in NEST are the 330~keV yields from AmBe reported by Sorensen \textit{et al.}~\cite{Sorensen_2011}. 
 Therefore this analysis relies on extrapolating the NEST NR response beyond the \textit{in-situ} LZ calibrations, specifically using recent \textit{ex-situ} measurements of the NR response from D-T neutrons which provide information on the NR yields up to 426~keV~\cite{DT_calib}. 
 Ref.~\cite{DT_calib} suggests that the NEST models may be overestimating both the light and charge yields at higher energies beyond the D-D endpoint. 
@@ -189,7 +193,7 @@ Using those D-T measurements, the uncertainty in the NEST NR models beyond the \
 However, when accounting for the reduction in total quanta, the change in the mean NR \{log$_{10}$(S1$c$), log$_{10}$(S2$c$)\} response is calculated to be $<$1\%. 
 The NEST models for the $\beta$ ER and NR response and NR response uncertainty used in this analysis are compared to LZ calibration data and shown in \autoref{fig:calibrations}.
 The impact from this uncertainty on WIMP sensitivity is tested by altering the NR response between -1$\sigma$ and +3$\sigma$ uncertainty. 
-Because the discrimination between ERs and NRs significantly improves as energy increases, the NR response uncertainty has negligible impact on the results of this analysis ($<$10\% on the final WIMP sensitivity, for any combination of mass and operator). 
+Because the discrimination between ERs and NRs significantly improves as energy increases, the NR response uncertainty has a negligible impact on the results of this analysis ($<$10\% on the final WIMP sensitivity, for any combination of mass and operator). 
 
 
 \begin{figure}[ht]
@@ -198,7 +202,8 @@ Because the discrimination between ERs and NRs significantly improves as energy 
     \caption{Calibration events in \{log$_{10}$(S1$c$), log$_{10}$(S2$c$)\} space from tritium (light blue), D-D neutrons (orange), and ${}^{212}$Pb (green) in and above the ROI.
     The mean ER and NR responses from NEST for flat energy spectra are shown in dark blue and red, respectively; the dashed lines indicate the 10\%~--~90\% percentiles of the expected response.
     Additionally, the region highlighted in pink denotes the shift in the 10\%~--~90\% percentiles when considering the $\pm1\sigma$ uncertainty in the NEST mean NR response beyond the D-D endpoint used for this study.
-    Gray contours are lines of constant reconstructed energy, labelled for both ER and NR interactions. The grey dashed verticle line denotes the upper log$_{10}$(S2$c$) bound used in this analysis, however, the calibration events in this region were used to constrain the ER response model. 
+    Gray contours are lines of constant reconstructed energy, labelled for both ER and NR interactions. 
+    The gray dashed vertical line denotes the upper log$_{10}$(S2$c$) bound used in this analysis, however, the calibration events in this region were used to constrain the ER response model. 
     }
     \label{fig:calibrations}
 \end{figure}
@@ -248,7 +253,8 @@ The uncertainty on the detection efficiency (gray region) was assessed with ${}^
 
 
 \section{\label{sec:model_and_stats}Modelling}
-To simulate the background and signal components in the observable space, the BACCARAT package based on GEANT4 \cite{LZ:simulations_2021, ALLISON2016} is utilized, along with a bespoke simulation of the LZ detector response, which is fine-tuned using the NEST detector model. As part of this methodology, the uncertainties associated with the background components are included as constraint terms in a combined fit of the background model to the data.
+To simulate the background and signal components in the observable space, the BACCARAT package based on GEANT4 \cite{LZ:simulations_2021, ALLISON2016} is utilized, along with a bespoke simulation of the LZ detector response, which is fine-tuned using the NEST detector model. 
+As part of this methodology, the uncertainties associated with the background components are included as constraint terms in a combined fit of the background model to the data.
 
 \begin{figure}
     \centering
@@ -265,7 +271,7 @@ To simulate the background and signal components in the observable space, the BA
 As stated in \autoref{sec:introduction}, the recoil spectra for each operator-mass combination are generated using a modified version of WimPyDD. 
 This analysis considers both isoscalar and isovector interactions for WIMP masses between 10 and 4000~GeV/c$^2$.
 As several operators have a dependence on the spin of the target nucleus, the response from each Xe isotope, weighted by its natural abundance, is incorporated into the overall response of the target.  
-In this analysis, the isospin representation follows the methodology outlined by Anand \textit{et al.}~\cite{Anand:MathematicaEFT}, previously used in Refs. \cite{PandaX2:SD_EFT_2019, Xenon100:EFT_2017} where
+In this analysis, the isospin representation follows the methodology outlined by Anand \textit{et al.}~\cite{Anand:MathematicaEFT}, previously used in Refs.~\cite{PandaX2:SD_EFT_2019, Xenon100:EFT_2017} where
 \begin{equation}
     c^{s} = \frac{1}{2} (c^{p} + c^{n}); \hspace{1cm} c^v = \frac{1}{2}(c^p - c^n).
 \end{equation}
@@ -308,7 +314,8 @@ The $\gamma$+K decay is outside of this search window and was used to infer the 
 
 Compton scatters from detector components were treated similarly to the Flat ER contributions in Ref.~\cite{LZ:SR1WS_2022}. 
 However, the rate of these backgrounds increases with energy as higher energy decays have longer mean free paths in LXe~\cite{berger1998xcom}. 
-The longer mean free paths increase the probability of multiple scatters in the fiducial volume. Due to finite resolution, some of the events are not separable from single scatters, causing an increased rate of events to deviate from a standard ER single scatter response at higher energies.
+The longer mean free paths increase the probability of multiple scatters in the fiducial volume. 
+Due to finite resolution, some of the events are not separable from single scatters, causing an increased rate of events to deviate from a standard ER single scatter response at higher energies.
 This is further obscured by the unique detector pathologies near detector components, such as poor light collection efficiency and field fringing, increasing the deviation.
 Therefore, detector-based ERs are separated from other ER sources for the background fitting procedure in this analysis. 
 These effects are typically subdominant in terms of ER leakage into the signal region since the ER and NR bands diverge at these energies unless a significant portion of the energy is deposited in a region from where the ionization signal cannot be collected. 
@@ -433,7 +440,8 @@ The 27\% $\gamma$-X misclassification rate is attributed to differences in the d
 
 The assessment using calibration data shows that the BDT has an acceptance larger than 99.9\% for ER and NR single scatter events throughout the FV.  
 A lower bound on the $\gamma$-X rejection rate of 73\% is obtained from a side band above the ROI, with the true rejection rate in the ROI expected to approach the value from simulations (99.6\%) at lower energies due to the better match between data and the detector response model. 
-Two events are removed by the BDT in the search dataset, consistent with the expectation of 1.6 $\gamma$-X events found using the measured activities and the rate at which they produce $\gamma$-X in the custom Monte Carlo simulation. This consistency, in addition to the high $\gamma$-X rejection rate of the BDT classifier, removes the need to incorporate a $\gamma$-X model in the fits to the observed data. 
+Two events are removed by the BDT in the search dataset, consistent with the expectation of 1.6 $\gamma$-X events found using the measured activities and the rate at which they produce $\gamma$-X in the custom Monte Carlo simulation. 
+This consistency, in addition to the high $\gamma$-X rejection rate of the BDT classifier, removes the need to incorporate a $\gamma$-X model in the fits to the observed data. 
 
 \section{\label{sec:results}Results}
 No significant evidence of an excess is found among the NREFT operators in the isoscalar and isovector bases for both elastic and inelastic DM in any of the models tested. 
@@ -457,10 +465,10 @@ Consistency with the first LZ result (Ref.~\cite{LZ:SR1WS_2022}) is established 
 Unaffected by the $\vec{v}^\perp$ and $\vec{q}$ degrees of freedom, $\mathcal{O}_1$ and $\mathcal{O}_4$ yield some of the most stringent constraints on the couplings of nearly all the operators.
 The most stringent limit is set by $\mathcal{O}_1$ and the limit on $\mathcal{O}_4$ is only exceeded by those of $\mathcal{O}_{11}$ and $\mathcal{O}_{12}$. 
 The nuclear response of $\mathcal{O}_{11}$ is similar to that of the SI operator $\mathcal{O}_1$ at higher energies, however momentum-dependence causes a suppressed rate at low energies. 
-$\mathcal{O}_{12}$ is an example of an operator for which the rate is enhanced by positive parity nucleon velocity contributions that are summed over the composite nucleus \cite{Anand:MathematicaEFT}. 
+$\mathcal{O}_{12}$ is an example of an operator for which the rate is enhanced by positive parity nucleon velocity contributions that are summed over the composite nucleus~\cite{Anand:MathematicaEFT}. 
 While, the exclusion curves for most operators have minima at WIMP masses of 30--50~GeV/c$^2$, interactions that are suppressed by two powers of $\vec{q}$ such as $\mathcal{O}_6$ and $\mathcal{O}_{15}$ attained minima in their coupling strengths at WIMP masses of 200--300~GeV/c$^2$; these are the operators that benefit the most from an extended energy window.
 \par
-Results of the XENON100 \cite{Xenon100:EFT_2017}, LUX \cite{LUX:EFTR4_2021}, and PandaX \cite{PandaX2:SD_EFT_2019} isoscalar analyses are also shown in \autoref{fig:limits-elastic-s} for comparison. 
+Results of the XENON100~\cite{Xenon100:EFT_2017}, LUX~\cite{LUX:EFTR4_2021}, and PandaX~\cite{PandaX2:SD_EFT_2019} isoscalar analyses are also shown in \autoref{fig:limits-elastic-s} for comparison. 
 The LUX constraints are only available for a WIMP mass of 1~TeV/c$^2$ since they originate from an inelastic DM search from which the data for zero mass splitting were used.
 All results are normalized to the dimensionless form $(c_i^N \times m_v^2)^2$, and the differing normalization conventions among experiments are presented in \cref{ap:1}. 
 Several other results are omitted in the comparison, primarily due to their choice of presenting limits in the proton and neutron bases instead of the isoscalar and isovector bases.
@@ -540,7 +548,7 @@ The observed inelastic upper limits do not drop below 1$\sigma$ of the backgroun
     \caption{ The 90\% confidence limit (solid lines) of the dimensionless isoscalar WIMP-nucleon couplings for each of the fourteen NREFT interactions.
     The dotted lines show the medians of the sensitivity projection and the shaded bands correspond to the 1$\sigma$ sensitivity band.
     The upper limit is evaluated for WIMP masses of 400~GeV/c$^2$, 1000~GeV/c$^2$, and 4000~GeV/c$^2$, for values of the mass splitting $\delta$ of 0~keV (purple), 50~keV (blue), 100~keV (green), 150~keV (yellow), 200~keV (orange), and 250~keV (red).
-    Circular data points represent the 1000 GeV/c$^2$ inelastic limits from the LUX WS2014-16 NREFT search~\cite{LUX:EFTR4_2021}.}
+    Circular data points represent the 1000~GeV/c$^2$ inelastic limits from the LUX WS2014-16 NREFT search~\cite{LUX:EFTR4_2021}.}
     \label{fig:limits-inelastic-s}
 \end{figure*}
 
@@ -569,7 +577,7 @@ The observed inelastic upper limits do not drop below 1$\sigma$ of the backgroun
 
 \section{\label{sec:conclusion}Conclusion}
 This article presents the results of a search for a wide range of dark matter scenarios using the first 60~live-day run of the LZ detector.
-The study extends the energy window of Ref.~\cite{LZ:SR1WS_2022} to include nuclear recoils of up to around 270~keV$_\text{nr}$ (defined as where the acceptance starts to fall below 90\%), which requires modelling and removal of the $\gamma$-X background.
+The study extends the energy window of Ref.~\cite{LZ:SR1WS_2022} to include nuclear recoils of up to around 270~keV$_\text{nr}$ (defined as where the acceptance starts to fall below 90\%), which requires modeling and removal of the $\gamma$-X background.
 A frequentist statistical analysis tested the data against 14 WIMP-nucleon operators generated by an NREFT, for both elastic and inelastic scattering, and for isoscalar and isovector couplings to the xenon nucleus.
 A total of 56 distinct interactions were tested, corresponding to a set of nuclear recoil spectra that span the entire energy window used in the analysis.
 No significant evidence of an excess is observed for any model.
