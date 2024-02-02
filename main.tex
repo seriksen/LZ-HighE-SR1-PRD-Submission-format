@@ -34,7 +34,7 @@ prd, nofootinbib]{revtex4-1}
 \date{\today}
 
 \begin{abstract}
-Following the first science results of the LUX-ZEPLIN (LZ) experiment, a dual-phase xenon time projection chamber operating from the Sanford Underground Research Facility in Lead, South Dakota, USA, we report the initial limits on a model-independent non-relativistic effective field theory describing the complete set of possible interactions of a weakly interacting massive particle (WIMP) with a nucleon. These results utilize the same 5.5 t fiducial mass and 60 live days of exposure collected for the LZ spin-independent and spin-dependent analyses while extending the upper limit of the energy region of interest by a factor of 7.5 to 270~keV$_\text{nr}$. No significant excess in this high energy region is observed. Using a profile-likelihood ratio analysis, we report 90\% confidence level exclusion limits on the coupling of each individual non-relativistic WIMP-nucleon operators for both elastic and inelastic interactions in the isoscalar and isovector bases.
+Following the first science results of the LUX-ZEPLIN (LZ) experiment, a dual-phase xenon time projection chamber operating from the Sanford Underground Research Facility in Lead, South Dakota, USA, we report the initial limits on a model-independent non-relativistic effective field theory describing the complete set of possible interactions of a weakly interacting massive particle (WIMP) with a nucleon. These results utilize the same 5.5 t fiducial mass and 60 live days of exposure collected for the LZ spin-independent and spin-dependent analyses while extending the upper limit of the energy region of interest by a factor of 7.5 to 270~keV$_\text{nr}$. No significant excess in this high energy region is observed. Using a profile-likelihood ratio analysis, we report 90\% confidence level exclusion limits on the coupling of each individual non-relativistic WIMP-nucleon operator for both elastic and inelastic interactions in the isoscalar and isovector bases.
 \end{abstract}
     
 \maketitle
@@ -42,23 +42,28 @@ Following the first science results of the LUX-ZEPLIN (LZ) experiment, a dual-ph
 %\tableofcontents
 
 \section{\label{sec:introduction}Introduction}
-Current and next-generation dark matter (DM) direct detection experiments searching for weakly interacting massive particles (WIMPs) will reach unprecedented levels of exposure during their operational lifetimes, allowing them to probe new parameter space for WIMPs, as demonstrated by the first LZ ~\cite{LZ:SR1WS_2022} and XENONnT ~\cite{XenonNT:WS_2023} spin-independent (SI) and spin-dependent (SD) WIMP-nucleon interaction limits. 
+Current and next-generation dark matter (DM) direct detection experiments searching for weakly interacting massive particles (WIMPs) will reach unprecedented levels of exposure during their operational lifetimes, allowing them to probe new parameter space for WIMPs, as demonstrated by the first LZ~\cite{LZ:SR1WS_2022} and XENONnT~\cite{XenonNT:WS_2023} spin-independent (SI) and spin-dependent (SD) WIMP-nucleon interaction limits. 
 Both the SI and SD interaction models assume that the momentum dependence of the interaction is suppressed due to the non-relativistic velocity of the WIMP in the nucleus rest frame, hence allowing for the use of a zero momentum cross-section~\cite{JUNGMAN:Supersymmetric_dark_matter}. 
 However, this may be an oversimplification of the dynamics of the interaction as, despite being small, the velocity is still non-zero.
-By considering interactions with momentum dependence, it is possible to increase the potential for discovery of WIMP-nucleon interactions by direct detection experiments.
+By considering interactions with momentum dependence, it is possible to increase the potential for the discovery of WIMP-nucleon interactions by direct detection experiments.
 \par
 The rate of a more generalized interaction may depend on the momentum transfer; if the momentum-independent components are suppressed, as in the interaction of a nucleon and DM with a magnetic dipole moment, the dominant component will be momentum-dependent.
-When considering all possible interactions in the nucleon frame, the momentum may be non-negligible, and is certainly non-negligible for WIMP-parton interactions \cite{Hisano:2017jmz}.
+When considering all possible interactions in the nucleon frame, the momentum may be non-negligible and is certainly non-negligible for WIMP-parton interactions~\cite{Hisano:2017jmz}.
 Given the variety of possible WIMP-nucleon interactions, the most comprehensive approach is to consider the WIMP-nucleon interaction in a model-independent way. 
-Since the non-gravitational interactions of DM are unknown, it is compelling to describe the interaction through an effective field theory (EFT) that captures a significant amount of the possible physics \cite{georgi:EFT}.
+Since the non-gravitational interactions of DM are unknown, it is compelling to describe the interaction through an effective field theory (EFT) that captures a significant amount of the possible physics~\cite{georgi:EFT}.
 Constraints on a comprehensive set of WIMP-nucleon interactions generated using an EFT~\cite{Fan_2010, Fitzpatrick:EFT}, have previously been established by PandaX-II~\cite{PandaX2:SD_EFT_2019}, LUX~\cite{LUX:EFTR4_2021} XENON100~\cite{Xenon100:EFT_2017}, DEAP-3600~\cite{DEAP:eft_2020}, Darkside-50~\cite{DarkSide-50:eft_2020} and PICO-60~\cite{PICO:photonM_2022}.
 This report further constrains the coefficients within this EFT by applying a profile likelihood ratio analysis to the first science data of the LZ experiment.
-An extended energy window is used to increase the coverage of the signal model profiles, which may produce significant interaction rates at energies beyond that of a typical SI or SD WIMP search. As such, the calibrations, efficiencies and relevant backgrounds are reassessed for this wider energy range.
+An extended energy window is used to increase the coverage of the signal model profiles, which may produce significant interaction rates at energies beyond that of a typical SI or SD WIMP search. 
+As such, the calibrations, efficiencies, and relevant backgrounds are reassessed for this wider energy range.
 
 \subsection{\label{subsec:theory}Non-Relativistic Effective Field Theory} 
 A full derivation of the WIMP-nucleon non-relativistic effective field theory (NREFT), which describes all possible interactions between WIMPs and a target nucleus, has been developed by Fan \textit{et al.}~\cite{Fan_2010} and Fitzpatrick \textit{et al.}~\cite{Fitzpatrick:EFT}.
-In an NREFT, one expands the effective Lagrangian in powers of the momentum transfer, with the cutoff scale of the EFT given by the maximum transferable momentum of about 200 MeV \cite{Fitzpatrick:EFT}.
-The coefficients of the expansion are determined by matching the effective theory onto an ultraviolet complete theory of dark matter at the cutoff scale.
+In an NREFT, one expands the effective Lagrangian in powers of the momentum transfer, with the cutoff scale of the EFT given by the maximum transferable momentum of about 200 MeV, and by the lowest-energy degrees of freedom that have been integrated out~\cite{Fitzpatrick:EFT}.
+When constructing the NREFT using the WIMP and nucleon fields, the pion degrees of freedom have been integrated out, which causes the theory to break down at energies below the pion's mass.
+The determination of the NREFT couplings is only the initial phase in constraining the fundamental interaction.
+When matching onto an ultraviolet complete theory the QCD dynamics that were integrated out must be taken into account, such as in the chiral EFT~\cite{Bishara_2017,Hoferichter_2018}.
+Experimental limits on both chiral and pion interactions have been explored by XENON1T~\cite{Xenon1t:wimp-pion-eft-2019,Xenon1t:eft_2022}.
+
 \par
 In the Fitzpatrick \textit{et al.} NREFT~\cite{Fitzpatrick:EFT}, the corresponding complete interaction Lagrangian can be written in terms of linear combinations of effective operators, each multiplied by a coefficient. 
 These operators can be expressed in terms of WIMP-nucleon couplings, which are proportional to low-energy constants (parameters such as the WIMP axial-vector or scalar coupling constant) in both the effective Lagrangian and the nuclear form factor. 
@@ -100,7 +105,7 @@ As only non-relativistic interactions are considered in this analysis, any opera
 This analysis is conducted in the isoscalar ($s$) and isovector ($v$) bases as opposed to the proton and neutron bases used in some previous analyses. 
 It can be argued that proton and neutron are much more natural bases to produce WIMP-nucleon scattering constraints, as this is what the WIMP interacts with.
 However, by exploiting the fact that isospin is a good quantum number in nuclear systems, it is possible to decompose the fundamental constraints on the operators when comparing experiments with varying target nuclei.
-An additional benefit to using the isoscalar and isovector bases is that it is possible to compare to the limits set on the elastic and inelastic WIMP-nucleon NREFT operators by the XENON collaboration \cite{Xenon100:EFT_2017}, as well as the inelastic limits set by LUX \cite{LUX:EFTR4_2021}.
+An additional benefit to using the isoscalar and isovector bases is that it is possible to compare to the limits set on the elastic and inelastic WIMP-nucleon NREFT operators by the XENON collaboration~\cite{Xenon100:EFT_2017}, as well as the inelastic limits set by LUX~\cite{LUX:EFTR4_2021}.
 \par
 This report also considers inelastic scatters where the masses of the incoming and outgoing DM particles can differ, allowing for the WIMP to transition into a more massive state during the scattering interaction~\cite{Smith_2001}. 
 This mass difference, denoted by $\delta_m \equiv m_{\chi,\mathrm{out}} - m_{\chi,\mathrm{in}}$, results in a minimum required recoil energy to produce an inelastic interaction. This in turn leads to a suppressed recoil rate at lower energies and an observed signal that is concentrated at higher energies. 
@@ -121,12 +126,12 @@ This report considers mass splitting values in the 0-250~keV range, which are we
 \par
 Before experimental limits can be translated into bounds on the operator coefficients of \autoref{eq:operators}, it is necessary to calculate nuclear response functions for DM elastic scattering. 
 It is common practice to use the full-basis shell-model calculations of each contributing Xe isotope using the GCN5082 interaction when determining these responses~\cite{MENENDEZ2009139}. 
-Recently, these calculations have been revised, leading to a much-improved determination of the one-body nuclear density matrices \cite{haxton_unpublished}.
-In this analysis, the updated density matrices were incorporated into DMFormfactor-v6 \cite{Anand:MathematicaEFT}, a software package for calculating the NREFT dark matter-nucleus scattering. 
+Recently, these calculations have been revised, leading to a much-improved determination of the one-body nuclear density matrices~\cite{haxton_unpublished}.
+In this analysis, the updated density matrices were incorporated into DMFormfactor-v6~\cite{Anand:MathematicaEFT}, a software package for calculating the NREFT dark matter-nucleus scattering. 
 %This integration enabled the extraction of more accurate nuclear response functions for Xe isotopes. 
-These response functions were subsequently integrated into WimPyDD, a framework for modelling the interaction of dark matter with atomic nuclei in direct detection experiments~\cite{Jeong_2022}. 
+These response functions were subsequently integrated into WimPyDD, a framework for modeling the interaction of dark matter with atomic nuclei in direct detection experiments~\cite{Jeong_2022}. 
 This modified version of WimPyDD was validated against both DMFormfactor-v6 and the published interaction Lagrangian recoil spectra by PandaX and Haxton~\cite{PandaX2:SD_EFT_2019}.
-\autoref{fig:recoils} shows the differential rate spectra, generated using the modified WimPyDD, for each non-relativistic operator considered in this analysis, assuming a WIMP mass of 1000 GeV/c$^2$.
+\autoref{fig:recoils} shows the differential rate spectra, generated using the modified WimPyDD, for each non-relativistic operator considered in this analysis, assuming a WIMP mass of 1000~GeV/c$^2$.
 
 
 \begin{figure*}[hbt!]
@@ -134,7 +139,7 @@ This modified version of WimPyDD was validated against both DMFormfactor-v6 and 
     \includegraphics[trim={8 5 5 5},clip, width=\textwidth]{logx_logy_m1000GeV_recoils-4}
     \caption{
     Differential recoil spectra for the fourteen non-relativistic NREFT WIMP-nucleon operators for a 1000~GeV/c$^2$ WIMP in both the isoscalar (solid line) and the isovector (dashed line) bases.
-    The operators are categorised by their nuclear responses (as defined in Ref.~\cite{Anand:MathematicaEFT}): $M$-only (top-left), $\Sigma^{'}$-only (top-centre), $\Sigma^{''}$-only (top-right), $M$ and $\Delta$ (bottom-left), $\Sigma^{'}$ and $\Phi^{''}$ (bottom-centre) and all other responses (bottom-right).
+    The operators are categorized by their nuclear responses (as defined in Ref.~\cite{Anand:MathematicaEFT}): $M$-only (top-left), $\Sigma^{'}$-only (top-center), $\Sigma^{''}$-only (top-right), $M$ and $\Delta$ (bottom-left), $\Sigma^{'}$ and $\Phi^{''}$ (bottom-center) and all other responses (bottom-right).
     The spectra were generated with a coupling strength of unity, excluding the possibility of interference terms. 
     The shaded gray regions indicate the energies at which the detection efficiency is below 50\% after all data analysis cuts have been applied (see~\autoref{fig:acceptances}).}
     \label{fig:recoils}
@@ -146,7 +151,7 @@ This modified version of WimPyDD was validated against both DMFormfactor-v6 and 
 \subsection{\label{subsec:selection}The LZ Detector} 
 The LZ experiment is housed in the Davis Campus of the Sanford Underground Research Facility, 4850 (4300~m.w.e) below Lead, South Dakota, USA, which provides an attenuation of the cosmic muon flux by a factor of 10$^6$~\cite{LZ:Experiment_2020,LZ:TDR_2017}.
 LZ utilizes a low-background, dual-phase time projection chamber (TPC) which contains 7~tonnes of liquid xenon (LXe) in the active volume~\cite{LZ:Experiment_2020,LZ:TDR_2017}. 
-The cylindrical TPC, with both a height and diameter of approximately 1.5~m, is equipped with two arrays consisting of 251 and 243 R11410–22 photomultiplier tubes (PMTs) at the top and bottom of the detector, respectively, in order to detect scintillation light. 
+The cylindrical TPC, with both a height and diameter of approximately 1.5~m, is equipped with two arrays consisting of 251 and 243 R11410–22 photomultiplier tubes (PMTs) at the top and bottom of the detector, respectively, to detect scintillation light. 
 
 Energy depositions in the LXe volume are detected by collection of the scintillation produced from the initial interaction (S1), as well as from the electroluminescent light from extracted electrons (S2).
 Electrons are collected due to the presence of electric fields applied across the detector volume: a 192~V/cm drift field and a 7.3~kV/cm gas electroluminescence field. 
@@ -162,14 +167,14 @@ Position-corrected observables also allow for the use of linear scaling factors,
 \end{equation}
 \par
 To reject internal and external backgrounds, the LZ experiment includes two veto detectors: a xenon ``Skin" veto surrounding the active mass, which is outfitted with 93 1-inch and 38 2-inch PMTs; and a near-hermetic ``outer detector" (OD) consisting of acrylic tanks containing 17~tonnes of gadolinium-loaded liquid scintillator (0.1\% by mass). 
-The skin is designed to identify multiple scattering interactions entering or exiting the TPC, while the outer detector is designed to capture and identify neutrons which may scatter in the TPC. 
+The skin is designed to identify multiple scattering interactions entering or exiting the TPC, while the outer detector is designed to capture and identify neutrons that may scatter in the TPC. 
 The entire system is housed in a tank that is filled with 238~tonnes of ultra-pure water, which provides shielding from ambient radioactive backgrounds emitted by the cavern rock~\cite{LZ:Experiment_2020, LZ:TDR_2017}.
 120 8-inch PMTs are situated around the walls of this tank to observe any light produced in the OD.
 \par
 A 60 live-day exposure using a 5.5~$\pm$~0.2 tonne fiducial volume (FV) was collected between December 2021 and May 2022. 
 Using events from a dataset with S1$c$ between 3~and~80~phd, uncorrected S2~$>$~600~phd and log$_{10}$(S2$c$)~$<$~5, LZ set world-leading constraints on SI WIMP-nucleon interactions for masses greater than 9~GeV/c$^2$, 
 with the most stringent limit excluding cross-sections greater than 9.2~$\times$~10$^{-48}$~cm$^2$ for 36~GeV/c$^2$ WIMPs~\cite{LZ:SR1WS_2022}. 
-This report extends the region of interest (ROI) of the same dataset to include S1$c$ signals between 3~and~600~phd in order to give sensitivity to NREFT interactions with their most significant rate contribution outside the typical search window used when considering SI and SD interactions. 
+This report extends the region of interest (ROI) of the same dataset to include S1$c$ signals between 3~and~600~phd to give sensitivity to NREFT interactions with their most significant rate contribution outside the typical search window used when considering SI and SD interactions. 
 The maximum S2$c$ considered in this analysis is set at log$_{10}$(S2$c$)~=~4.5 to remove ER backgrounds far from the NR signal region, given that leakage from ERs becomes less significant at higher energies (see \autoref{fig:calibrations}).
 The lower bound on uncorrected S2 is maintained at 600~phd.
 
@@ -185,8 +190,7 @@ To account for this, the functionality in NEST for energy-dependent smearing of 
 This results in proper reproduction of the ER response in and beyond the NREFT ROI, allowing for accurate characterization of ER leakage from $\beta$ backgrounds into the NR signal region.
 \par
 The NR response for LZ is only directly calibrated to approximately 80~keV$_{\rm{nr}}$\footnote{For energy units, ``keV" is used for true recoil energies, while reserving ``keV$_{\rm{ee}}$" and ``keV$_{\rm{nr}}$" for energy values reconstructed from measured quantities and assuming either an ER or NR interaction, respectively.} using D-D with supplementary AmLi neutron calibrations. 
-However, the NR models in NEST are based on a collection of all LXe light and charge yield measurements available in the existing literature, and 
-the highest energy measurements included in NEST are the 330~keV yields from AmBe reported by Sorensen \textit{et al.}~\cite{Sorensen_2011}. 
+However, the NR models in NEST are based on a collection of all LXe light and charge yield measurements available in the existing literature, and the highest energy measurements included in NEST are the 330~keV yields from AmBe reported by Sorensen \textit{et al.}~\cite{Sorensen_2011}. 
 Therefore this analysis relies on extrapolating the NEST NR response beyond the \textit{in-situ} LZ calibrations, specifically using recent \textit{ex-situ} measurements of the NR response from D-T neutrons which provide information on the NR yields up to 426~keV~\cite{DT_calib}. 
 Ref.~\cite{DT_calib} suggests that the NEST models may be overestimating both the light and charge yields at higher energies beyond the D-D endpoint. 
 Using those D-T measurements, the uncertainty in the NEST NR models beyond the \textit{in-situ} calibration yields is constrained. 
@@ -202,8 +206,8 @@ Because the discrimination between ERs and NRs significantly improves as energy 
     \caption{Calibration events in \{log$_{10}$(S1$c$), log$_{10}$(S2$c$)\} space from tritium (light blue), D-D neutrons (orange), and ${}^{212}$Pb (green) in and above the ROI.
     The mean ER and NR responses from NEST for flat energy spectra are shown in dark blue and red, respectively; the dashed lines indicate the 10\%~--~90\% percentiles of the expected response.
     Additionally, the region highlighted in pink denotes the shift in the 10\%~--~90\% percentiles when considering the $\pm1\sigma$ uncertainty in the NEST mean NR response beyond the D-D endpoint used for this study.
-    Gray contours are lines of constant reconstructed energy, labelled for both ER and NR interactions. 
-    The gray dashed vertical line denotes the upper log$_{10}$(S2$c$) bound used in this analysis, however, the calibration events in this region were used to constrain the ER response model. 
+    Gray contours are lines of constant reconstructed energy, labeled for both ER and NR interactions. 
+    The gray dashed horizontal line denotes the upper log$_{10}$(S2$c$) bound used in this analysis, however, the calibration events in this region were used to constrain the ER response model. 
     }
     \label{fig:calibrations}
 \end{figure}
@@ -223,7 +227,7 @@ Two events are identified as $\gamma$-X and removed from the LZ NREFT search dat
 \autoref{fig:r2_drift} shows the spatial distribution of the events passing all analysis criteria, highlighting the events removed by the $\gamma$-X classifier and the LXe Skin and OD veto systems.
 The NR acceptance of the BDT was calculated using simulated data to be $99.950 \pm 0.002$\%.
 The high NR acceptance was validated using D-D and AmLi calibration data. 
-Further details of the $\gamma$-X event topology, modelling procedure, and BDT results are discussed in \autoref{subsec:mssi}. 
+Further details of the $\gamma$-X event topology, modeling procedure, and BDT results are discussed in \autoref{subsec:mssi}. 
 \par
 The final efficiency of the data selection criteria, evaluated with ${}^3$H, ${}^{220}$Rn, and AmLi calibration data and including trigger and event reconstruction efficiency, is shown in \autoref{fig:acceptances} as a function of true NR energy.
 
@@ -252,7 +256,7 @@ The uncertainty on the detection efficiency (gray region) was assessed with ${}^
 \end{figure}
 
 
-\section{\label{sec:model_and_stats}Modelling}
+\section{\label{sec:model_and_stats}Modeling}
 To simulate the background and signal components in the observable space, the BACCARAT package based on GEANT4 \cite{LZ:simulations_2021, ALLISON2016} is utilized, along with a bespoke simulation of the LZ detector response, which is fine-tuned using the NEST detector model. 
 As part of this methodology, the uncertainties associated with the background components are included as constraint terms in a combined fit of the background model to the data.
 
@@ -284,10 +288,8 @@ The local DM density $\rho_0$ is taken as 0.3~GeV/cm$^3$ \cite{DM_parameters:LEW
 Each operator is considered as an independent interaction channel, where only contributions from that operator with no interference have been considered. 
 In practice, this requires setting the a priori of the coefficient of the given operator to $1/m_v$, and all other coefficients to 0. 
 The quantity $m_v$ is introduced to ensure the coefficients have dimensions of energy$^{-2}$ and is set to the Higgs vacuum expectation value of 246.2~GeV/c$^2$~\cite{Fitzpatrick:EFT}. 
-This is a natural value for the normalisation as it allows the coefficients to be expressed in terms of the Standard Model weak interaction mass scale.
-The normalisation is required due to the decision by Anand et al. to normalize the spinors by 4$m_N m_\chi$, 
-%where $m_N$ is the nucleon mass, 
-which allows for a dimensionless representation of the operators. 
+This is a natural value for the normalization as it allows the coefficients to be expressed in terms of the Standard Model weak interaction mass scale.
+The normalization is required due to the decision by Anand \textit{et al.} to normalize the spinors by 4$m_N m_\chi$, which allows for a dimensionless representation of the operators. 
 By considering the case of a single operator $\mathcal{O}_i$ dominating the interaction, the differential recoil rate scales with the square of $c_i^N$, where $N \in \{s, v\}$, such that
 \begin{equation}\label{eq:spectrumReduced}
      \frac{\mathrm{d} R_i^N}{\mathrm{d} E_{R}}=\frac{(c_{i}^{N})^2 \rho_{0}}{32 \pi m_{\chi}^{3} m_{N}^{2}} \int_{v>v_\text{min}} \frac{f(\vec{v})}{v} F_{i, i}^{\left(N, N\right)}\left(v^2, q^{2}\right) \mathrm{d}{v},
@@ -301,7 +303,7 @@ The background model used in this analysis consists of 11 components.
 \autoref{tab:fit_result} lists the expected and fitted number of events for each component.
 Ref.~\cite{LZ:sr1backgrounds_2022} contains a complete discussion of the backgrounds in LZ for the data-taking period used for this analysis.
 Ref.~\cite{LZ:SR1WS_2022} describes most of these background sources in detail, and the expectation for some backgrounds is mostly unchanged (such as ${}^{37}$Ar, ${}^{8}$B coherent neutrino-nuclear scattering, detector neutrons, and accidental coincidence of isolated S1s and S2s). 
-The expected contributions from continuous ER sources -- namely the ``Flat ER" sum of ${}^{222}$Rn, ${}^{220}$Rn, and ${}^{85}$Kr, as well as the ERs from solar neutrinos -- is increased from Ref.~\cite{LZ:SR1WS_2022} due to the extended energy window of this analysis. 
+The expected contributions from continuous ER sources -- namely the ``Flat ER" sum of ${}^{222}$Rn, ${}^{220}$Rn, and ${}^{85}$Kr, as well as the ERs from solar neutrinos and double $\beta$ decays ${}^{136}$Xe -- is increased from Ref.~\cite{LZ:SR1WS_2022} due to the extended energy window of this analysis. 
 Except for increasing the energy range, these models are unchanged from the previous analysis. 
 The ${}^{127}$Xe and ${}^{124}$Xe models are expanded in this analysis, as the ${}^{127}$Xe K-shell electron captures and ${}^{124}$Xe KL, KM, and KN double electron capture signals are reconstructed partially within the search ROI\footnote{A dedicated NEST model is used to model electron capture ERs, as the mean light and charge yields per unit energy for these interactions has been shown to differ from $\beta$ interactions~\cite{XELDA_Lshell_EC}.}
 
@@ -331,7 +333,7 @@ Because they are a unique background to high-energy searches and can be reconstr
     The middle column shows the predicted number of events with uncertainties as described in the text.
     These uncertainties are used as constraints in a combined fit of the background model.
     The fit result is shown in the right column. ``Flat ER" represents the combination of ${}^{214}$Pb, ${}^{212}$Pb, and ${}^{85}$Kr mixed in the LXe, while ``Detector ER" represents electron recoils originating from radiogenic decays in detector materials.
-    Both ${}^{37}$Ar and the detector neutrons have non-gaussian constraints and are totalled separately.
+    Both ${}^{37}$Ar and the detector neutrons have non-gaussian constraints and are totaled separately.
     Values with a fit result of zero are set to have no lower uncertainty.
     }
     \begin{ruledtabular}
@@ -440,7 +442,7 @@ The 27\% $\gamma$-X misclassification rate is attributed to differences in the d
 
 The assessment using calibration data shows that the BDT has an acceptance larger than 99.9\% for ER and NR single scatter events throughout the FV.  
 A lower bound on the $\gamma$-X rejection rate of 73\% is obtained from a side band above the ROI, with the true rejection rate in the ROI expected to approach the value from simulations (99.6\%) at lower energies due to the better match between data and the detector response model. 
-Two events are removed by the BDT in the search dataset, consistent with the expectation of 1.6 $\gamma$-X events found using the measured activities and the rate at which they produce $\gamma$-X in the custom Monte Carlo simulation. 
+Two events are removed by the BDT in the search dataset, consistent with the expectation of 1.6 $\gamma$-X events found using the measured activities and the rate at which they produce $\gamma$-X in the custom Monte Carlo simulation.
 This consistency, in addition to the high $\gamma$-X rejection rate of the BDT classifier, removes the need to incorporate a $\gamma$-X model in the fits to the observed data. 
 
 \section{\label{sec:results}Results}
@@ -461,7 +463,8 @@ A few operator-mass combinations, e.g. $\mathcal{O}_{3, 13, 15}$ above 30~GeV/c$
 These discrepancies are within $2\sigma$ and are generally caused by ER background leakage into the NR region occupied by these momentum-suppressed operators with highly peaking spectra (see \autoref{fig:recoils}).
 The deviation from the ER band of the two most egregious outlier events is consistent with unresolved multiple scatter from detector-based ER decays.
 \par
-Consistency with the first LZ result (Ref.~\cite{LZ:SR1WS_2022}) is established with $\mathcal{O}_1$ and $\mathcal{O}_4$, the SI and SD operators that couple solely to the total number of nucleons and the nucleon spin, respectively.
+%Consistency with the first LZ result (Ref.~\cite{LZ:SR1WS_2022}) is established with $\mathcal{O}_1$ and $\mathcal{O}_4$, the SI and SD operators that couple solely to the total number of nucleons and the nucleon spin, respectively.
+Consistency with the first LZ result (Ref.~\cite{LZ:SR1WS_2022}) is established with $\mathcal{O}_1$, the SI operator that couples solely to the total number of nucleons.
 Unaffected by the $\vec{v}^\perp$ and $\vec{q}$ degrees of freedom, $\mathcal{O}_1$ and $\mathcal{O}_4$ yield some of the most stringent constraints on the couplings of nearly all the operators.
 The most stringent limit is set by $\mathcal{O}_1$ and the limit on $\mathcal{O}_4$ is only exceeded by those of $\mathcal{O}_{11}$ and $\mathcal{O}_{12}$. 
 The nuclear response of $\mathcal{O}_{11}$ is similar to that of the SI operator $\mathcal{O}_1$ at higher energies, however momentum-dependence causes a suppressed rate at low energies. 
@@ -494,7 +497,7 @@ This analysis uses the updated matrices with the effect of altered event rates f
     The 90\% confidence limit (black lines) of the dimensionless isoscalar WIMP-nucleon couplings for each of the fourteen NREFT elastic interactions.
     The black dotted lines show the medians of the sensitivity projection, and the green and yellow bands correspond to the 1$\sigma$ and 2$\sigma$ sensitivity bands, respectively.
     Also shown are the NREFT results from the XENON100 experiment (magenta) and the PandaX-II experiment (blue).
-    The latter upper limits are cast from their starting points of $\mathcal{L}_5$ (reduces to $\mathcal{O}1$) and $\mathcal{L}_{15}$ (reduces to $\mathcal{O}4$).
+    The latter upper limits are cast from their starting points of $\mathcal{L}_5$ (reduces to $\mathcal{O}_1$) and $\mathcal{L}_{15}$ (reduces to $\mathcal{O}_4$).
     The LUX limits (brown points), are from their $\delta=0$~keV inelastic result.
     }
   \label{fig:limits-elastic-s}
@@ -518,7 +521,7 @@ This analysis uses the updated matrices with the effect of altered event rates f
     \caption{The 90\% confidence limit (black lines) of the dimensionless isovector WIMP-nucleon couplings for each of the fourteen NREFT elastic interactions.
     The black dotted lines show the medians of the sensitivity projection, and the green and yellow bands correspond to the 1$\sigma$ and 2$\sigma$ sensitivity bands, respectively.
     Also shown are the SI and SD results of the PandaX-II experiment (blue).
-    The latter upper limits are cast from their $\mathcal{L}_5$ (reduces to $\mathcal{O}1$) and their $\mathcal{L}_{15}$ (reduces to $\mathcal{O}4$)}
+    The latter upper limits are cast from their $\mathcal{L}_5$ (reduces to $\mathcal{O}_1$) and their $\mathcal{L}_{15}$ (reduces to $\mathcal{O}_4$)}
   \label{fig:limits-elastic-v}
 \end{figure*}
 
@@ -597,7 +600,7 @@ This research used resources of the National Energy Research Scientific Computin
 The University of Edinburgh is a charitable body, registered in Scotland, with the registration number SC005336. 
 The assistance of SURF and its personnel in providing physical access and general logistical and technical support is acknowledged. We acknowledge the South Dakota Governor's office, the South Dakota Community Foundation, the South Dakota State University Foundation, and the University of South Dakota Foundation for use of xenon.
 We also acknowledge the University of Alabama for providing xenon.
-For the purpose of open access, the authors have applied a Creative Commons Attribution (CC BY) licence to any Author Accepted Manuscript version arising from this submission.
+For the purpose of open access, the authors have applied a Creative Commons Attribution (CC BY) license to any Author Accepted Manuscript version arising from this submission.
 \end{acknowledgments}
 
 \appendix
@@ -650,13 +653,13 @@ Additionally, the isoscalar representation of $\mathcal{O}_1$ allows for compari
 
 \newpage
 \section{Data Release\label{ap:2}}
-Data from selected plots in this paper can be accessed at: \href{https://tinyurl.com/LZDataReleaseRun1HENR}{https://tinyurl.com/LZDataReleaseRun1HENR}
+Data from selected plots in this paper can be accessed at: \href{https://www.hepdata.net/record/ins2729878}{https://www.hepdata.net/record/ins2729878}
 
 \begin{itemize}
-    \item[--] Figure \ref{fig:acceptances}:
+    \item[--] \autoref{fig:acceptances}:
    points representing the total efficiency curve for this analysis (black line).
-    \item[--] Figures \ref{fig:data-ROI}: points in S1-S2 space representing the data used in the WIMP search (black points).
-    \item[--] Figures \ref{fig:limits-elastic-s}~\ref{fig:limits-elastic-v}~\ref{fig:limits-inelastic-s}~\ref{fig:limits-inelastic-v}: Points representing the observed 90\% confidence level upper limits, together with the median, $\pm1\sigma$, and $\pm2\sigma$ expected sensitivities.
+    \item[--] \autoref{fig:data-ROI}: points in S1-S2 space representing the data used in the WIMP search (black points).
+    \item[--] \cref{fig:limits-elastic-s,fig:limits-elastic-v,fig:limits-inelastic-s,fig:limits-inelastic-v}: Points representing the observed 90\% confidence level upper limits, together with the median, $\pm1\sigma$, and $\pm2\sigma$ expected sensitivities.
 \end{itemize}
 
 \bibliography{biblog}
