@@ -34,7 +34,9 @@ prd, nofootinbib]{revtex4-1}
 \date{\today}
 
 \begin{abstract}
-Following the first science results of the LUX-ZEPLIN (LZ) experiment, a dual-phase xenon time projection chamber operating from the Sanford Underground Research Facility in Lead, South Dakota, USA, we report the initial limits on a model-independent non-relativistic effective field theory describing the complete set of possible interactions of a weakly interacting massive particle (WIMP) with a nucleon. These results utilize the same 5.5 t fiducial mass and 60 live days of exposure collected for the LZ spin-independent and spin-dependent analyses while extending the upper limit of the energy region of interest by a factor of 7.5 to 270~keV$_\text{nr}$. No significant excess in this high energy region is observed. Using a profile-likelihood ratio analysis, we report 90\% confidence level exclusion limits on the coupling of each individual non-relativistic WIMP-nucleon operator for both elastic and inelastic interactions in the isoscalar and isovector bases.
+Following the first science results of the LUX-ZEPLIN (LZ) experiment, a dual-phase xenon time projection chamber operating from the Sanford Underground Research Facility in Lead, South Dakota, USA, we report the initial limits on a model-independent non-relativistic effective field theory describing the complete set of possible interactions of a weakly interacting massive particle (WIMP) with a nucleon. These results utilize the same 5.5 t fiducial mass and 60 live days of exposure collected for the LZ spin-independent and spin-dependent analyses while extending the upper limit of the energy region of interest by a factor of 7.5 to 270~keV$_\text{nr}$. 
+No significant excess in this high energy region is observed. 
+Using a profile-likelihood ratio analysis, we report 90\% confidence level exclusion limits on the coupling of each individual non-relativistic WIMP-nucleon operator for both elastic and inelastic interactions in the isoscalar and isovector bases.
 \end{abstract}
     
 \maketitle
@@ -51,18 +53,18 @@ The rate of a more generalized interaction may depend on the momentum transfer; 
 When considering all possible interactions in the nucleon frame, the momentum may be non-negligible and is certainly non-negligible for WIMP-parton interactions~\cite{Hisano:2017jmz}.
 Given the variety of possible WIMP-nucleon interactions, the most comprehensive approach is to consider the WIMP-nucleon interaction in a model-independent way. 
 Since the non-gravitational interactions of DM are unknown, it is compelling to describe the interaction through an effective field theory (EFT) that captures a significant amount of the possible physics~\cite{georgi:EFT}.
-Constraints on a comprehensive set of WIMP-nucleon interactions generated using an EFT~\cite{Fan_2010, Fitzpatrick:EFT}, have previously been established by PandaX-II~\cite{PandaX2:SD_EFT_2019}, LUX~\cite{LUX:EFTR4_2021} XENON100~\cite{Xenon100:EFT_2017}, DEAP-3600~\cite{DEAP:eft_2020}, Darkside-50~\cite{DarkSide-50:eft_2020} and PICO-60~\cite{PICO:photonM_2022}.
+Constraints on a comprehensive set of WIMP-nucleon interactions generated using an EFT~\cite{Fan_2010, Fitzpatrick:EFT}, have previously been established by PandaX-II~\cite{PandaX2:SD_EFT_2019}, LUX~\cite{LUX:EFTR4_2021}, XENON100~\cite{Xenon100:EFT_2017}, DEAP-3600~\cite{DEAP:eft_2020}, Darkside-50~\cite{DarkSide-50:eft_2020} and PICO-60~\cite{PICO:photonM_2022}.
 This report further constrains the coefficients within this EFT by applying a profile likelihood ratio analysis to the first science data of the LZ experiment.
 An extended energy window is used to increase the coverage of the signal model profiles, which may produce significant interaction rates at energies beyond that of a typical SI or SD WIMP search. 
 As such, the calibrations, efficiencies, and relevant backgrounds are reassessed for this wider energy range.
 
 \subsection{\label{subsec:theory}Non-Relativistic Effective Field Theory} 
 A full derivation of the WIMP-nucleon non-relativistic effective field theory (NREFT), which describes all possible interactions between WIMPs and a target nucleus, has been developed by Fan \textit{et al.}~\cite{Fan_2010} and Fitzpatrick \textit{et al.}~\cite{Fitzpatrick:EFT}.
-In an NREFT, one expands the effective Lagrangian in powers of the momentum transfer, with the cutoff scale of the EFT given by the maximum transferable momentum of about 200 MeV, and by the lowest-energy degrees of freedom that have been integrated out~\cite{Fitzpatrick:EFT}.
-When constructing the NREFT using the WIMP and nucleon fields, the pion degrees of freedom have been integrated out, which causes the theory to break down at energies below the pion's mass.
-The determination of the NREFT couplings is only the initial phase in constraining the fundamental interaction.
-When matching onto an ultraviolet complete theory the QCD dynamics that were integrated out must be taken into account, such as in the chiral EFT~\cite{Bishara_2017,Hoferichter_2018}.
-Experimental limits on both chiral and pion interactions have been explored by XENON1T~\cite{Xenon1t:wimp-pion-eft-2019,Xenon1t:eft_2022}.
+In an NREFT, one expands the effective Lagrangian in powers of the momentum transferred in the WIMP-nucleus interaction. 
+The cutoff scale for this theory is dictated by the maximum momentum transfer, around 200 MeV, set by the reduced mass of the WIMP-nucleus system and escape velocity of the WIMP~\cite{Anand:MathematicaEFT}.
+The pion degrees of freedom are integrated out of this EFT, restricting its validity to energies below the mass of the pion~\cite{Fitzpatrick:EFT}.
+While this NREFT reliably describes all possible interactions at these energies, in order to match it to an ultraviolet theory of dark matter, the QCD dynamics that were ignored during the creation of the NREFT have to be brought back. 
+Examples of doing this are described in Refs.~\cite{Bishara_2017,Hoferichter_2018,Xenon1t:eft_2022} and experimental limits on WIMP-pion interactions are described in Ref.~\cite{Xenon1t:wimp-pion-eft-2019}.
 
 \par
 In the Fitzpatrick \textit{et al.} NREFT~\cite{Fitzpatrick:EFT}, the corresponding complete interaction Lagrangian can be written in terms of linear combinations of effective operators, each multiplied by a coefficient. 
@@ -223,10 +225,10 @@ The efficiency of the data selection criteria beyond the lower-energy ROI report
 
 Following a similar approach as the LUX NREFT analysis~\cite{LUX:EFTR4_2021}, this analysis implements a boosted decision tree (BDT) to identify and remove $\gamma$-X events, which are the interactions of multiply scattering $\gamma$-rays classified as single scatters due to one or more scatters occurring in a region of the TPC from where charge cannot be collected~\cite{LUX:EFTR4_2021}.
 This leads to an attenuated S2 signal relative to the observed S1, increasing the ER leakage into the signal region.
-Two events are identified as $\gamma$-X and removed from the LZ NREFT search data, consistent with the model expectation of 1.6 events. 
+Two events are identified as $\gamma$-X and removed from the LZ NREFT search data, consistent with the model expectation of 1.6 events, all from the bottom of the FV. 
 \autoref{fig:r2_drift} shows the spatial distribution of the events passing all analysis criteria, highlighting the events removed by the $\gamma$-X classifier and the LXe Skin and OD veto systems.
-The NR acceptance of the BDT was calculated using simulated data to be $99.950 \pm 0.002$\%.
-The high NR acceptance was validated using D-D and AmLi calibration data. 
+The NR acceptance of the BDT was calculated using simulated data to be $99.950 \pm 0.002$\% within the FV, and was validated using D-D and AmLi neutron calibration data. 
+A fraction of events is classified as $\gamma$-X outside the FV, where the BDT performance is degraded due to the noisiness of S1 signals near the reflective TPC wall. 
 Further details of the $\gamma$-X event topology, modeling procedure, and BDT results are discussed in \autoref{subsec:mssi}. 
 \par
 The final efficiency of the data selection criteria, evaluated with ${}^3$H, ${}^{220}$Rn, and AmLi calibration data and including trigger and event reconstruction efficiency, is shown in \autoref{fig:acceptances} as a function of true NR energy.
@@ -303,9 +305,9 @@ The background model used in this analysis consists of 11 components.
 \autoref{tab:fit_result} lists the expected and fitted number of events for each component.
 Ref.~\cite{LZ:sr1backgrounds_2022} contains a complete discussion of the backgrounds in LZ for the data-taking period used for this analysis.
 Ref.~\cite{LZ:SR1WS_2022} describes most of these background sources in detail, and the expectation for some backgrounds is mostly unchanged (such as ${}^{37}$Ar, ${}^{8}$B coherent neutrino-nuclear scattering, detector neutrons, and accidental coincidence of isolated S1s and S2s). 
-The expected contributions from continuous ER sources -- namely the ``Flat ER" sum of ${}^{222}$Rn, ${}^{220}$Rn, and ${}^{85}$Kr, as well as the ERs from solar neutrinos and double $\beta$ decays ${}^{136}$Xe -- is increased from Ref.~\cite{LZ:SR1WS_2022} due to the extended energy window of this analysis. 
+The expected contributions from continuous ER sources -- namely the ``Flat ER" sum of ${}^{222}$Rn, ${}^{220}$Rn, and ${}^{85}$Kr, as well as the ERs from solar neutrinos and double-$\beta$ decays from ${}^{136}$Xe -- is increased from Ref.~\cite{LZ:SR1WS_2022} due to the extended energy window of this analysis. 
 Except for increasing the energy range, these models are unchanged from the previous analysis. 
-The ${}^{127}$Xe and ${}^{124}$Xe models are expanded in this analysis, as the ${}^{127}$Xe K-shell electron captures and ${}^{124}$Xe KL, KM, and KN double electron capture signals are reconstructed partially within the search ROI\footnote{A dedicated NEST model is used to model electron capture ERs, as the mean light and charge yields per unit energy for these interactions has been shown to differ from $\beta$ interactions~\cite{XELDA_Lshell_EC}.}
+The ${}^{127}$Xe and ${}^{124}$Xe models are expanded in this analysis, as the ${}^{127}$Xe K-shell electron captures and ${}^{124}$Xe KL, KM, and KN double electron capture signals are reconstructed partially within the search ROI\footnote{A dedicated NEST model is used to model electron capture ERs, as the mean light and charge yields per unit energy for these interactions has been shown to differ from $\beta$ interactions~\cite{XELDA_Lshell_EC}.}.
 
 Two other sources of background are treated uniquely for this analysis: ${}^{125}$I electron captures and Compton scattering $\gamma$-rays from trace levels of ${}^{40}$K, ${}^{60}$Co, ${}^{232}$Th, and ${}^{238}$U in the detector components~\cite{LZ:radioactivity_and_cleanliness_2020} as well as ${}^{40}$K, ${}^{232}$Th, and ${}^{238}$U from the cavern walls \cite{LZ:cavern_gamma_2020}. 
 
@@ -323,7 +325,6 @@ Therefore, detector-based ERs are separated from other ER sources for the backgr
 These effects are typically subdominant in terms of ER leakage into the signal region since the ER and NR bands diverge at these energies unless a significant portion of the energy is deposited in a region from where the ionization signal cannot be collected. 
 These $\gamma$-X events predominantly occur near the cathode and TPC walls. 
 Because they are a unique background to high-energy searches and can be reconstructed near and below the NR signal region, they are considered separately in this analysis and described in the following section.
-
 
 \hyperref[fig:data-ROI]{Figure~\ref*{fig:data-ROI}} shows the \{log$_{10}$(S1$c$), log$_{10}$(S2$c$\} distribution of the 835 events which pass all selections, along with contours representing a 1000 GeV/c$^2$ $\mathcal{O}_6$ isoscalar signal model (representative of signal models that peak at non-zero energy), and the background model.
 
@@ -364,7 +365,8 @@ Because they are a unique background to high-energy searches and can be reconstr
     The contours that enclose 1$\sigma$ (dark) and 2.5$\sigma$ (light) regions represent the following models: 
     the shaded red region indicates the detector neutrons, the shaded orange region indicate the detector ERs, the blue region is the combined representation of all other ER models (${}^{214}$Pb, ${}^{212}$Pb, ${}^{85}$Kr, ${}^{37}$Ar,  ${}^{125}$I, ${}^{124}$Xe, ${}^{127}$Xe, ${}^{136}$Xe, and $\nu$ ER) and the black dashed lines show a 1000 GeV/c$^2$ $\mathcal{O}_6$ isoscalar signal model. 
     The solid red line corresponds to the NR median, while the red dotted lines represent the 10~--~90\% percentiles of the expected response.
-    The model contours are produced with a linear scale for S1$_c$ prior to being cast into log and take into account all the efficiencies used in the analysis. Contours of constant recoil energy have been included as thin gray lines. Grayed regions at the left and top of the plot indicate parameter space outside the energy ROI.
+    The model contours are produced with a linear scale for S1$_c$ prior to being cast into log and take into account all the efficiencies used in the analysis. 
+    Contours of constant recoil energy have been included as thin gray lines. Grayed regions at the left and top of the plot indicate parameter space outside the energy ROI.
 }
 
     \label{fig:data-ROI}
@@ -389,6 +391,12 @@ By incorporating the measured activities of ${}^{127}$Xe and radiogenic impuriti
 Light and charge yields are calculated using the photo-absorption and Compton scattering ER models from NEST.
 S1 position dependence and individual PMT channel areas are calculated using light collection maps generated with BACCARAT~\cite{LZ:simulations_2021}. 
 Additionally, field magnitudes and electron drift paths throughout the TPC are calculated using maps generated from dedicated finite-element simulations~\cite{fenics}, providing information about the regions along the cathode and wall where an S2 signal would escape detection.
+The simulations include the potential wells at the wall created by TPC field shaping rings that trap electrons, reducing the size of the S2 pulse.
+However, the rate of $\gamma$-X events at the wall is far lower than that at the cathode, given the much larger volume of the RFR. 
+\par
+A data-driven number of expected $\gamma$-X events was calculated using the $\gamma$-X model and the measured rate of $^{127}$Xe, the dominant source of the background.
+The model was used to obtain the ratio of $\gamma$-X to the clean 203~keV peak from $^{127}$Xe, which was then scaled by the size of the 203~keV peak in the observed dataset to yield an expectation of 1.6 $\pm$ 0.3 $\gamma$-X events in the ROI and FV. 
+The rate of observed $\gamma$-X candidates rises in accordance with the model outside the FV as the edge of the TPC boundary is approached. 
 \par
 The $\gamma$-X simulations are used to train a multi-class BDT in order to classify events as ER, NR, $^{127}$Xe RFR $\gamma$-X, $^{127}$Xe wall $\gamma$-X, or cathode RFR $\gamma$-X.
 The BDT is provided with a seven-dimensional simulated dataset with the following features: 
@@ -412,12 +420,14 @@ The final three S1 pulse-based features may be exploited to differentiate $\gamm
 None of the seven features individually can provide sufficient $\gamma$-X rejection power. 
 The information contained in the correlations of the hit pattern features with pulse areas and event positions, however, may be harnessed by a multivariate tool such as a BDT for the clean removal of $\gamma$-X events.  
 \par
-The accuracy of true single scatter and $\gamma$-X identification is assessed by training ten BDTs, each tested on different 10\% (80,000 events) portions of the entire simulated dataset. 
-The averaged results show a large true single scatter acceptance within the FV and ROI, and are summarized in \autoref{table: reduced confusion matrix cuts} with errors given by the standard deviations of predicted counts across the ten BDTs. 
-The calculated single scatter acceptance remains high even at the edges of the FV. 
+The accuracy of true single scatter and $\gamma$-X identification is assessed by cross-validating BDT predictions for ten non-overlapping datasets.
+In this procedure, the entire simulated dataset is split into ten equally-sized portions (80,000 events), and each portion is taken as the validation set for a BDT that is trained on the remaining nine portions.
+The parameters and classification thresholds of the ten BDTs are identical to those of the final BDT deployed on the EFT search data. 
+The general performance on the validation datasets is summarized in \autoref{table: reduced confusion matrix cuts} with errors given by the standard deviations of predicted counts across the ten BDTs. 
+A high averaged single scatter acceptance is seen within the FV and ROI, which remains high even at the boundaries of the FV. 
 \begin{table}
     \begin{center}
-    \caption{Reduced confusion matrix after FV and ROI cuts, averaged over 10 BDTs (each evaluated on a different dataset), showing the correct identification rate (\%) across the two classes on the diagonal and the misclassification rate on the off-diagonals.}
+    \caption{Confusion matrix after FV and ROI cuts, averaged over ten BDTs (each evaluated on a different dataset), showing the correct identification rate (\%) across the two classes on the diagonal and the misclassification rate on the off-diagonals.}
         \begin{ruledtabular}
             \begin{tabular}{c|cc}
                  & True SS & True $\gamma$-X \\
@@ -430,7 +440,7 @@ The calculated single scatter acceptance remains high even at the edges of the F
     \end{center}
     \label{table: reduced confusion matrix cuts}
 \end{table}
-To validate the high acceptance of simulated single scatters, the BDT is deployed on $^{220}$Rn calibration data in the S1c~$<$~1000~phd range.
+To validate the high acceptance of simulated single scatters in observed data, the BDT is deployed on $^{220}$Rn calibration data in the S1c~$<$~1000~phd range.
 Under the most conservative assumption that all 25,000 events originating from the $^{220}$Rn decay chain are true single scatters, the single scatter acceptance rate of the BDT is $99.92$\%. 
 The BDT is also deployed on DD and AmLi neutron calibration data to verify NR acceptance. 
 No DD events are removed by the BDT, and only AmLi events below the NR band that are indicative of multiply scattering neutrons were removed (multiply scattering neutron events have the same S1 hit pattern characteristics of $\gamma$-X events). 
@@ -499,6 +509,7 @@ This analysis uses the updated matrices with the effect of altered event rates f
     Also shown are the NREFT results from the XENON100 experiment (magenta) and the PandaX-II experiment (blue).
     The latter upper limits are cast from their starting points of $\mathcal{L}_5$ (reduces to $\mathcal{O}_1$) and $\mathcal{L}_{15}$ (reduces to $\mathcal{O}_4$).
     The LUX limits (brown points), are from their $\delta=0$~keV inelastic result.
+    The LZ signal model uses nuclear density matrices that have been updated since the XENON100 and LUX analyses, leading to reduced rates for some operators such as $\mathcal{O}_{13}$, where the LUX result appears stronger than the LZ result. 
     }
   \label{fig:limits-elastic-s}
 \end{figure*}
@@ -662,6 +673,7 @@ Data from selected plots in this paper can be accessed at: \href{https://www.hep
     \item[--] \cref{fig:limits-elastic-s,fig:limits-elastic-v,fig:limits-inelastic-s,fig:limits-inelastic-v}: Points representing the observed 90\% confidence level upper limits, together with the median, $\pm1\sigma$, and $\pm2\sigma$ expected sensitivities.
 \end{itemize}
 
+\newpage
 \bibliography{biblog}
 
 
