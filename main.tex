@@ -11,7 +11,7 @@ prd, nofootinbib]{revtex4-1}
 \usepackage{bm}% bold math
 \usepackage{hyperref}% add hypertext capabilities
 \usepackage[mathlines]{lineno}% Enable numbering of text and display math/
-%\linenumbers\relax % Commence numbering lines
+\linenumbers\relax % Commence numbering lines
 \usepackage{xcolor}
 \usepackage{import}
 \usepackage{booktabs}
@@ -125,6 +125,7 @@ This requirement is incorporated into the Hermitian basis vectors by replacing t
 where $v^\perp$ is the perpendicular velocity for elastic scattering. 
 A similar replacement is made for each operator, $\mathcal{O}_i$. 
 This report considers mass splitting values in the 0-250~keV range, which are well-motivated in many WIMP models~\cite{Smith_2001, Barello_2014}.
+
 \par
 Before experimental limits can be translated into bounds on the operator coefficients of \autoref{eq:operators}, it is necessary to calculate nuclear response functions for DM elastic scattering. 
 It is common practice to use the full-basis shell-model calculations of each contributing Xe isotope using the GCN5082 interaction when determining these responses~\cite{MENENDEZ2009139}. 
@@ -290,14 +291,18 @@ The local DM density $\rho_0$ is taken as 0.3~GeV/cm$^3$ \cite{DM_parameters:LEW
 Each operator is considered as an independent interaction channel, where only contributions from that operator with no interference have been considered. 
 In practice, this requires setting the a priori of the coefficient of the given operator to $1/m_v$, and all other coefficients to 0. 
 The quantity $m_v$ is introduced to ensure the coefficients have dimensions of energy$^{-2}$ and is set to the Higgs vacuum expectation value of 246.2~GeV/c$^2$~\cite{Fitzpatrick:EFT}. 
-This is a natural value for the normalization as it allows the coefficients to be expressed in terms of the Standard Model weak interaction mass scale.
-The normalization is required due to the decision by Anand \textit{et al.} to normalize the spinors by 4$m_N m_\chi$, which allows for a dimensionless representation of the operators. 
+The Higgs vacuum expectation value is a convenient normalization, as it allows the coefficients to be expressed in terms of the Standard Model weak interaction mass scale, and it allows for comparison with previous NREFT searches~\cite{LUX:EFTR4_2021,Xenon100:EFT_2017}.
+This follows the convention set by Anand \textit{et al.}~\cite{Anand:MathematicaEFT} to normalize the spinors by 4$m_N m_\chi$, which allows for a dimensionless representation of the operators. 
+
+
 By considering the case of a single operator $\mathcal{O}_i$ dominating the interaction, the differential recoil rate scales with the square of $c_i^N$, where $N \in \{s, v\}$, such that
 \begin{equation}\label{eq:spectrumReduced}
      \frac{\mathrm{d} R_i^N}{\mathrm{d} E_{R}}=\frac{(c_{i}^{N})^2 \rho_{0}}{32 \pi m_{\chi}^{3} m_{N}^{2}} \int_{v>v_\text{min}} \frac{f(\vec{v})}{v} F_{i, i}^{\left(N, N\right)}\left(v^2, q^{2}\right) \mathrm{d}{v},
 \end{equation}
 where $v_\text{min} = q(m_\chi + m_N) / (2 m_\chi m_N)$ is the minimum velocity that produces a recoil energy $E_R$, and $F_{i,i}^{(N, N)}$ is a form factor that depends on the nuclear physics. 
-A sample of the signal distributions in the $\{$log$_{10}$(S1$c$), log$_{10}$(S2$c)\}$ observable space is shown in \autoref{fig:signal-PDF}.
+A sample of the signal distributions in the $\{$log$_{10}$(S1$c$), log$_{10}$(S2$c)\}$ observable space is shown in \autoref{fig:signal-PDF}. 
+
+For inelastic interactions, we only consider the case where the WIMP transitions to a higher mass state, and we do not consider the case of excitations of the target xenon nucleus~\cite{McCabe:2015eia,Baudis:ineasltic_xenon_searching}. These excitations produce a secondary ER signal that would require a different ROI and set of background models compared to elastically-scattering WIMPs~\cite{XENON_inelastic}. 
 
 \subsection{\label{subsec:bg}Backgrounds}
 \par
